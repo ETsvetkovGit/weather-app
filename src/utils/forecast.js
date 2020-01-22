@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) => {
                 // {summary: response.body.daily.data[0].summary,
                 // temperature: response.body.currently.temperature ,
                 // percipitation: response.body.currently.precipProbability,}
-                response.body.daily.data[0].summary+' It is currently ' + response.body.currently.temperature + ' degrees out. There is a ' +response.body.currently.precipProbability+' chance of rain.'
+                response.body.daily.data[0].summary+' It is currently ' + response.body.currently.temperature + ' degrees out. There is a ' +response.body.currently.precipProbability+' chance of rain. The Max temperature is ' +response.body.daily.data[0].temperatureHigh+' and the min temperarure is ' +response.body.daily.data[0].temperatureLow + '. The wind speeed is '+response.body.daily.data[0].windSpeed +' and the wind ust is '+response.body.daily.data[0].windGust 
             )
         }
             
